@@ -1,0 +1,163 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+
+.zone {
+    
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+/*
+Menu
+*/
+.menu{
+    width: 100%;
+    background: linear-gradient(to right, rgb(86, 86, 156), rgb(80, 180, 167));
+    padding: 20px;
+    position: fixed; 
+    top:0; 
+    
+}
+
+.menu ul{
+    display: flex;
+
+}
+
+.menu li a{
+    padding: 10px;
+    color: white;
+    
+}
+
+.menu li a:hover{
+    
+    color: black;
+    
+}
+
+.push{
+    margin-left: auto;
+}
+
+/*
+Main
+*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cover{
+    width: 30rem;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 20px; 
+    background-color: cornflowerblue;  
+
+}
+
+.box{
+    /* background-color: lightsteelblue; */
+    background-color: rgba(128, 128, 128, 0.418);
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+.box:hover{
+    transform:rotate(-7deg);
+    background-color: white;
+}
+
+.grid > img{
+    width: 100%;
+}
+
+
+/*
+Rodapé
+*/
+footer{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background: linear-gradient(to left, rgb(53, 53, 163), rgb(80, 180, 167));
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.social li a{
+    color: white;
+}
+
+.social li a:hover{
+    color: black;
+}
+
+ /*
+ Responsividade
+ */
+
+@media only screen and (max-width: 600px){
+    .menu li a{
+       padding: 0;
+       margin: 10px;
+       font-size: smaller;       
+    }
+
+    .grid{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          
+    
+    }
+
+}
